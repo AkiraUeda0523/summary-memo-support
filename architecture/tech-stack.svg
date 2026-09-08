@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400" role="img" aria-labelledby="title desc">
+  <title id="title">Organizing The Brain MEMO 技術スタック</title>
+  <desc id="desc">iOSアプリ、AI要約、Cloudflareバックエンド、課金とセキュリティの技術構成</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf7}.ink{fill:#292824}.muted{fill:#6f6c64}.line{stroke:#d9d5ca;stroke-width:2}.card{fill:#fff;stroke:#e2ded4;stroke-width:2}.accent{fill:#ef775f}.blue{fill:#4f83cc}.gold{fill:#d59b36}.green{fill:#4d9b72}.purple{fill:#8065b3}
+      text{font-family:".Hiragino Kaku Gothic Interface",sans-serif}.title{font-size:52px;font-weight:700}.subtitle{font-size:20px}.section{font-size:27px;font-weight:700}.item{font-size:17px;font-weight:600}.note{font-size:14px}.flow{font-size:16px;font-weight:650}.pill{fill:#f3f0e9}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="1400"/>
+  <text class="title ink" x="80" y="82">Organizing The Brain MEMO</text>
+  <text class="subtitle muted" x="82" y="120">殴り書きをKJ法で整理し、次の一歩へつなげるAIメモアプリ</text>
+  <line class="line" x1="80" y1="148" x2="1320" y2="148"/>
+
+  <g transform="translate(80 185)">
+    <rect class="card" width="585" height="240" rx="18"/>
+    <circle class="accent" cx="38" cy="39" r="13"/><text class="section ink" x="64" y="48">iOS / UI・データ</text>
+    <text class="item ink" x="34" y="94">Swift  •  SwiftUI  •  iOS 18+</text>
+    <text class="item ink" x="34" y="133">SwiftData（メモ・要約・チェック項目）</text>
+    <text class="item ink" x="34" y="172">UIKit Bridge（UITextView / Rich Text）</text>
+    <text class="item ink" x="34" y="211">Codable  •  NSKeyedArchiver</text>
+  </g>
+  <g transform="translate(735 185)">
+    <rect class="card" width="585" height="240" rx="18"/>
+    <circle class="purple" cx="38" cy="39" r="13"/><text class="section ink" x="64" y="48">AI / 要約設計</text>
+    <text class="item ink" x="34" y="94">Gemini 3.1 Flash-Lite API</text>
+    <text class="item ink" x="34" y="133">KJ法ベースの固定フォーマット</text>
+    <text class="item ink" x="34" y="172">Structured Output（JSON Schema）</text>
+    <text class="item ink" x="34" y="211">要約＋ネクストステップを1リクエストで生成</text>
+  </g>
+
+  <g transform="translate(80 455)">
+    <rect class="card" width="585" height="240" rx="18"/>
+    <circle class="blue" cx="38" cy="39" r="13"/><text class="section ink" x="64" y="48">Backend / Security</text>
+    <text class="item ink" x="34" y="94">Cloudflare Workers  •  TypeScript</text>
+    <text class="item ink" x="34" y="133">Workers KV（端末・回数・費用管理）</text>
+    <text class="item ink" x="34" y="172">Keychain  •  CryptoKit  •  HMAC-SHA256</text>
+    <text class="item ink" x="34" y="211">日次レート制限＋月間費用サーキットブレーカー</text>
+  </g>
+  <g transform="translate(735 455)">
+    <rect class="card" width="585" height="240" rx="18"/>
+    <circle class="gold" cx="38" cy="39" r="13"/><text class="section ink" x="64" y="48">収益化 / 課金</text>
+    <text class="item ink" x="34" y="94">StoreKit 2（自動更新サブスクリプション）</text>
+    <text class="item ink" x="34" y="133">App Store Server API（サーバー照合）</text>
+    <text class="item ink" x="34" y="172">Google Mobile Ads（リワード広告）</text>
+    <text class="item ink" x="34" y="211">無料枠＋広告ボーナス＋Pro枠</text>
+  </g>
+
+  <g transform="translate(80 725)">
+    <rect class="card" width="1240" height="245" rx="18"/>
+    <circle class="green" cx="38" cy="39" r="13"/><text class="section ink" x="64" y="48">非同期処理・運用フロー</text>
+    <g transform="translate(35 83)">
+      <rect class="pill" width="190" height="65" rx="13"/><text class="flow ink" x="95" y="39" text-anchor="middle">SwiftUI / async-await</text>
+      <text class="section muted" x="213" y="42">›</text>
+      <rect class="pill" x="245" width="190" height="65" rx="13"/><text class="flow ink" x="340" y="39" text-anchor="middle">署名付きHTTPS</text>
+      <text class="section muted" x="448" y="42">›</text>
+      <rect class="pill" x="480" width="205" height="65" rx="13"/><text class="flow ink" x="582" y="39" text-anchor="middle">Cloudflare Worker</text>
+      <text class="section muted" x="697" y="42">›</text>
+      <rect class="pill" x="730" width="175" height="65" rx="13"/><text class="flow ink" x="817" y="39" text-anchor="middle">Gemini API</text>
+      <text class="section muted" x="918" y="42">›</text>
+      <rect class="pill" x="950" width="220" height="65" rx="13"/><text class="flow ink" x="1060" y="39" text-anchor="middle">要約 / 次の一歩</text>
+    </g>
+    <text class="note muted" x="35" y="190">Build &amp; Validation: Xcodebuild • TypeScript strict • Wrangler deploy　　Package: Swift Package Manager / npm</text>
+    <text class="note muted" x="35" y="218">設計上の狙い: APIキーをアプリに含めず、費用・不正利用・課金状態をサーバー側で一元制御</text>
+  </g>
+</svg>
