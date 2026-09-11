@@ -3,79 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="SUMMARY MEMO — 書き留めた思考を、AIで整理し、次の一歩へつなげるメモアプリ。">
+  <meta name="theme-color" content="#050b1d">
+  <meta name="description" content="SUMMARY MEMO — 思いつくまま書いたメモをAIが整理し、具体的な次の一歩へ変えるメモアプリ。">
+  <meta property="og:title" content="SUMMARY MEMO — 書いて終わるメモから、活用するメモへ。">
+  <meta property="og:description" content="自由に書くのは人間の仕事。整理するのは、AIの仕事。">
+  <meta property="og:image" content="assets/app-icon.png">
   <title>SUMMARY MEMO — 書いて終わるメモから、活用するメモへ。</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="thought-map.css">
 </head>
-<body>
+<body class="marketing-page">
   <header class="site-header">
-    <a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="42" height="42"><span>SUMMARY MEMO</span></a>
-    <nav aria-label="メインナビゲーション"><a href="#features">機能</a><a href="#engineering">開発</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a></nav>
+    <a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="44" height="44"><span>SUMMARY MEMO</span></a>
+    <nav aria-label="メインナビゲーション"><a href="#concept">コンセプト</a><a href="#features">機能</a><a href="#engineering">技術</a><a href="support.html">サポート</a></nav>
   </header>
 
   <main id="top">
     <section class="hero">
+      <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
       <div class="hero-copy">
-        <p class="eyebrow">THINK freely. ORGANIZE clearly. ACT next.</p>
+        <p class="eyebrow">THINK FREELY · ORGANIZE CLEARLY · MOVE FORWARD</p>
         <h1>そのメモ、<br><span>また見返しますか？</span></h1>
-        <p class="lead">自由に書くのは、人間の仕事。整理するのは、AIの仕事。</p>
-        <p>まとまっていない言葉も、文章になっていない思考も、そのままで大丈夫。SUMMARY MEMOは、感情や意図を残しながら思考を整理し、読み返したくなる要約と具体的なネクストステップへ変えます。</p>
-        <div class="hero-actions"><a class="button primary" href="#experience">アプリ体験を見る</a><a class="button" href="#engineering">技術と設計を見る</a></div>
+        <p class="lead">自由に書くのは、人間の仕事。<br>整理するのは、AIの仕事。</p>
+        <p class="hero-description">まとまっていなくても、文章になっていなくても大丈夫。感情や意図を残したまま、読み返したくなる要約と、今日から試せるネクストステップへ。</p>
+        <div class="hero-actions"><a class="button primary" href="#experience">体験を見る</a><a class="button ghost" href="#engineering">開発ストーリー</a></div>
+        <div class="language-row"><span>日本語</span><span>English</span><span>简体中文</span></div>
       </div>
-      <div class="hero-visual">
-        <div class="thought t1">ふと思いついたこと</div><div class="thought t2">忘れたくない気づき</div><div class="thought t3">今の葛藤</div>
-        <img class="phone" src="assets/screen-editor.png" alt="SUMMARY MEMOのメモ作成画面">
+      <div class="hero-visual" aria-label="散らばった言葉が意味ごとに集まり、次の一歩へつながる抽象図">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="thought-map">
+          <span class="thought t1">朝の習慣</span>
+          <span class="thought t2">忘れたくない気づき</span>
+          <span class="thought t3">今の葛藤</span>
+          <span class="thought t4">いつか試したいこと</span>
+          <span class="thought t5">仕事のアイデア</span>
+          <svg class="connections" viewBox="0 0 640 640" aria-hidden="true">
+            <path d="M102 134 C190 182 221 254 310 312"/><path d="M527 144 C440 183 398 236 330 307"/>
+            <path d="M92 474 C180 441 224 370 310 327"/><path d="M538 467 C445 437 401 371 334 329"/>
+            <path d="M320 86 C319 171 320 231 320 296"/><path class="forward" d="M320 354 C320 419 320 468 320 526"/>
+          </svg>
+          <div class="organize-core"><small>AI ORGANIZE</small><strong>思考を整理</strong><span>似ている言葉を集める</span></div>
+          <div class="next-node"><small>NEXT STEP</small><strong>次の一歩へ</strong></div>
+        </div>
       </div>
     </section>
 
-    <section class="statement">
+    <section id="concept" class="manifesto">
       <p>せっかく書いたメモ。</p>
-      <h2>もう眠らさない。</h2>
-      <p>書いて終わるメモから、活用するメモへ。</p>
+      <h2>もう、眠らさない。</h2>
+      <p>書いて終わるメモから、<strong>活用するメモへ。</strong></p>
     </section>
 
     <section id="experience" class="experience section">
-      <div class="section-heading"><p class="eyebrow">THE EXPERIENCE</p><h2>書く。整理する。次へ進む。</h2><p>ひとつの思考を、3つの連動した画面で扱います。</p></div>
+      <div class="section-heading"><p class="eyebrow">ONE THOUGHT, THREE VIEWS</p><h2>書く。整理する。<br>そして、次へ進む。</h2><p>オリジナルのメモ・AI要約・ネクストステップ。ひとつの思考を、連動する3つの画面で見渡せます。</p></div>
       <div class="steps">
-        <article><span class="number">01</span><img src="assets/screen-editor.png" alt="メモ画面"><h3>思いつくまま書く</h3><p>殴り書き、短文、感情、タスク。最初から整える必要はありません。</p></article>
-        <article><span class="number">02</span><img src="assets/screen-summary.png" alt="要約画面"><h3>AIが意味ごとに整理</h3><p>似ている考えを集め、まとまりに名前を付け、書き手の意図を残して再構成します。</p></article>
-        <article><span class="number">03</span><img src="assets/screen-next.png" alt="ネクストステップ画面"><h3>次の一歩へつなげる</h3><p>整理された内容から、小さく具体的な行動をチェックリストで提案します。</p></article>
+        <article><span class="number">01</span><div class="screen-wrap"><img src="assets/screen-editor.png" alt="自由に書けるメモ編集画面" loading="lazy"></div><h3>思いつくまま書く</h3><p>殴り書き、短文、感情、タスク。最初から文章を整える必要はありません。</p></article>
+        <article><span class="number">02</span><div class="screen-wrap"><img src="assets/screen-summary.png" alt="意味ごとに整理された要約画面" loading="lazy"></div><h3>AIが思考を整理する</h3><p>似ている内容を集め、見出しを付け、重複を整理。単なる短縮ではなく、意味を残して再構成します。</p></article>
+        <article><span class="number">03</span><div class="screen-wrap"><img src="assets/screen-next.png" alt="具体的な行動を示すネクストステップ画面" loading="lazy"></div><h3>次の一歩へつなげる</h3><p>整理された内容をもとに、小さく具体的な行動をチェックリストで提案します。</p></article>
       </div>
     </section>
 
-    <section id="features" class="features section dark">
-      <div class="section-heading"><p class="eyebrow">FEATURES</p><h2>考える途中の言葉を、<br>使える情報に変える。</h2></div>
+    <section id="features" class="features section">
+      <div class="section-heading"><p class="eyebrow">DESIGNED FOR REAL THOUGHTS</p><h2>考えている途中の言葉を、<br>使える情報に変える。</h2></div>
       <div class="feature-grid">
-        <article><b>01</b><h3>意味を残すAI要約</h3><p>単なる短縮ではなく、重複を整理し、見出しと箇条書きで構造化します。</p></article>
-        <article><b>02</b><h3>ネクストステップ</h3><p>要約内容を根拠に、次に試せる具体的な行動を提案します。</p></article>
-        <article><b>03</b><h3>自作ジャンル</h3><p>用意された分類だけでなく、自分の思考に合うジャンルを作れます。</p></article>
-        <article><b>04</b><h3>重要度×緊急度</h3><p>マトリックスでメモを見渡し、いま向き合うべきテーマを選べます。</p></article>
-        <article><b>05</b><h3>検索と連動表示</h3><p>メモを探すと、対応する要約とネクストステップも同時に絞り込まれます。</p></article>
-        <article><b>06</b><h3>データを守る設計</h3><p>正式マイグレーション、継続保存、ゴミ箱、バックアップと復元を備えます。</p></article>
+        <article class="wide"><b>AI SUMMARY</b><h3>短くするだけではない要約</h3><p>言葉の断片を意味の近いまとまりへ。感情や葛藤を平らにせず、そのメモに合う見出しで読み返しやすく整理します。</p><div class="cluster"><span>断片</span><span>感情</span><span>タスク</span><em>→</em><strong>ひとつの見通し</strong></div></article>
+        <article><b>NEXT STEP</b><h3>理解を、行動へ</h3><p>要約から実行可能な提案を導き、チェックリストとして一歩ずつ進めます。</p></article>
+        <article><b>ORGANIZE</b><h3>自分だけの分類</h3><p>自作ジャンルと重要度×緊急度マトリックスで、思考を自分らしく整理できます。</p></article>
+        <article><b>FIND</b><h3>3画面が連動する検索</h3><p>メモを絞り込むと、対応する要約とネクストステップも同じ並びで見つかります。</p></article>
+        <article><b>PEACE OF MIND</b><h3>大切な言葉を守る</h3><p>継続保存、正式なデータ移行、ゴミ箱、バックアップと復元を備えています。</p></article>
       </div>
     </section>
 
     <section id="engineering" class="engineering section">
-      <div class="section-heading"><p class="eyebrow">ENGINEERING CASE STUDY</p><h2>個人開発でも、信頼性は妥協しない。</h2><p>「ユーザーの思考を預かる」プロダクトとして、データ保全・外部通信・費用制御を設計の中心に置きました。</p></div>
+      <div class="section-heading"><p class="eyebrow">ENGINEERING CASE STUDY</p><h2>個人開発でも、<br>信頼性は妥協しない。</h2><p>ユーザーの思考を預かるアプリだからこそ、データ保全・通信の安全性・費用制御・失敗経路のテストを設計の中心に置きました。</p></div>
       <div class="case-grid">
-        <article><span>DATA</span><h3>SwiftDataの正式移行</h3><p>VersionedSchemaとMigrationPlanを採用。更新時に保存済みメモを失わない構造へ移行しました。</p></article>
-        <article><span>AI</span><h3>構造化された要約</h3><p>Cloudflare Workersを介してGeminiへ接続。言語を維持しながら、要約と次の行動をJSON構造で受け取ります。</p></article>
-        <article><span>SECURITY</span><h3>秘密鍵をアプリに置かない</h3><p>APIキーはWorkerのSecretで管理。端末ごとのHMAC署名、時刻検証、本文上限で直接攻撃を抑えます。</p></article>
-        <article><span>COST</span><h3>強整合な利用台帳</h3><p>Durable Objectsで利用枠と月額予算を原子的に予約。アクセス集中時にも上限を超えにくい構造です。</p></article>
-        <article><span>ADS</span><h3>広告報酬のサーバー検証</h3><p>AdMob SSVの署名、広告ユニット、時刻、取引IDを検証し、視聴完了時だけ枠を付与します。</p></article>
-        <article><span>QUALITY</span><h3>通信をモック化したテスト</h3><p>Gemini・広告・課金を実通信なしで再現。バックエンド、ユニット、UIテストで失敗経路まで検証します。</p></article>
+        <article><span>iOS / DATA</span><h3>SwiftUI + SwiftData</h3><p>VersionedSchemaによる正式移行、継続的な下書き保存、30日間のゴミ箱、JSONバックアップを実装。</p></article>
+        <article><span>AI / BACKEND</span><h3>Gemini + Cloudflare</h3><p>Workersを安全な中継層にし、構造化出力で要約とネクストステップを一貫して生成。</p></article>
+        <article><span>SECURITY / COST</span><h3>秘密を置かない設計</h3><p>端末署名、本文上限、Durable Objectsの強整合な利用台帳、月間費用サーキットブレーカーを採用。</p></article>
+        <article><span>ADS / QUALITY</span><h3>報酬をサーバーで検証</h3><p>AdMob SSVで視聴を検証。外部通信はモック化し、成功・上限・通信断・重複実行まで自動テスト。</p></article>
       </div>
-      <a class="stack-card" href="tech-stack.html"><img src="assets/tech-stack.png" alt="SUMMARY MEMOで使用した技術スタック"><span>技術スタックを大きく見る →</span></a>
+      <a class="stack-card" href="tech-stack.html"><img src="assets/tech-stack.png" alt="SUMMARY MEMOの技術スタック" loading="lazy"><span>技術スタックを詳しく見る →</span></a>
     </section>
 
-    <section class="closing">
-      <img src="assets/app-icon.png" alt="SUMMARY MEMOアイコン" width="112" height="112">
-      <p class="eyebrow">SUMMARY MEMO</p>
-      <h2>書き留めた思考を、<br>「次の一歩」に変える。</h2>
-      <p>思いつくまま書く。あとから整理する。そして、次へ進む。</p>
-    </section>
+    <section class="closing"><img src="assets/app-icon.png" alt="SUMMARY MEMOアイコン" width="116" height="116"><p class="eyebrow">SUMMARY MEMO</p><h2>あなたが書いた言葉を、<br>もう一度、あなたの力に。</h2><p>思いつくまま書く。あとから整理する。そして、次の一歩へ。</p><a class="button primary" href="support.html">アプリについて詳しく見る</a></section>
   </main>
 
-  <footer><div><strong>SUMMARY MEMO</strong><p>個人開発：Akira Ueda</p></div><nav><a href="support.html">サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="https://github.com/AkiraUeda0523/Organizing-The-Brain-MEMO">GitHub</a></nav><small>© 2026 Akira Ueda</small></footer>
+  <footer><div><strong>SUMMARY MEMO</strong><p>Designed &amp; developed by Akira Ueda</p></div><nav><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a><a href="https://github.com/AkiraUeda0523/Organizing-The-Brain-MEMO">GitHub</a></nav><small>© 2026 Akira Ueda</small></footer>
 </body>
 </html>
